@@ -1,0 +1,22 @@
+{
+  "name": "@app/marketing",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "next -p 3010",
+    "build": "yarn clean && next build && next export",
+    "clean": "rimraf .next && rimraf out",
+    "test": "jest --coverage --config ./jest.config.js ./src/**/* ./__tests__/**/*",
+    "start": "yarn build && next start -p 3010"
+  },
+  "config": {
+    "port": 3010,
+    "path": "/marketing"
+  },
+  "devDependencies": {
+    "@storybook/react": "^6.1.14"
+  },
+  "dependencies": {
+    "@app/components": "0.0.0",
+    "@app/functions": "0.0.0"
+  }
+}

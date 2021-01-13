@@ -1,0 +1,10 @@
+{
+  "name": "@app/functions",
+  "version": "0.0.0",
+  "main": "src/index.ts",
+  "scripts": {
+    "storybook": "start-storybook -p 6006",
+    "test": "jest --coverage --config ./jest.config.js ./src/*",
+    "build-storybook": "build-storybook"
+  }
+}
